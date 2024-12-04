@@ -13,7 +13,7 @@
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: bottom center;
+  background-position: bottom center; 
 }
 
 .banner-section .content-box{
@@ -22,9 +22,9 @@
 }
 
 .banner-section .content-box h2{
-  font-size: 60px;
+  font-size: 80px;
   line-height: 79px;
-  color: #000;
+  color: #fff;
   max-width: 930px;
   margin: 0 auto;
   margin-bottom: 24px;
@@ -33,7 +33,7 @@
 .banner-section .content-box p{
   font-size: 20px;
   line-height: 32px;
-  color: #000;
+  color: #fff;
   max-width: 720px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -917,8 +917,8 @@
     margin-left: 0px !important;
   }
    .banner-section .content-box h2{
-    font-size: 33px;
-    line-height: 40px;
+    font-size: 35px;
+    line-height: 45px;
   }
 }
 
