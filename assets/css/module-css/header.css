@@ -371,10 +371,10 @@
 .menu-area .mobile-nav-toggler {
   position: relative;
   float: right;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 50px;
   cursor: pointer;
-  background: var(--theme-color);
+  background: var(--secondary-color);
   display: none;
 }
 

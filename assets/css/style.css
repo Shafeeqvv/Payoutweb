@@ -1,47 +1,152 @@
- 
-/* Css For Jobaway */
-
-/************ TABLE OF CONTENTS ***************
-1. Fonts
-2. Reset
-3. Global
-4. Main Header/style-one/style-two
-5. Main Slider/style-one/style-two
-6. Intro Section
-7. Welcome Section
-9. Cta Section
-8. Research Fields
-10. Testimonial Section
-11. Researches Section
-12. Team Section
-14. Video
-15. Fact Counter
-16. News Section
-19. Clients Section
-20. Main Footer
-21. Footer Bottom
-22. Research Style Two
-23. Innovative Solution
-24. Discover Section
-25. Testimonial Section
-26. Chooseus Section
-27. News Style Two
-28. Page Title
-29. Research Page Section
-30. Research Details
-31. Professor Page Section
-32. Professor Details
-33. About Section
-34. Error Section
-35. Blog Page Section
-36. Blog Details
-37. Blog Sidebar
-38. Contact Section
-39. Google Map
 
 
-**********************************************/
 
+#main-div {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 0;
+}
+
+#main-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  background-color: var(--theme-color);
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+#main-button ~ button {
+  visibility: hidden;
+  font-weight: 600;
+  height: 50px;
+  padding: 0 20px;
+  color: #fff;
+  background: linear-gradient(90deg, var(--theme-color), var(--secondary-color  ));
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  border: 0;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: .2s all linear;
+  -webkit-transition: .2s all linear;
+  -moz-transition: .2s all linear;
+  -ms-transition: .2s all linear;
+  -o-transition: .2s all linear;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+#main-button.open ~ button {
+  visibility: visible;
+  right: 70px;
+  opacity: 1;
+  transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -webkit-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -moz-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -ms-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -o-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+}
+
+#main-button ~ a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 50px;
+  width: 50px;
+  font-size: 20px;
+  opacity: 0;
+  text-decoration: none;
+  color: #fff;
+  background-color: #fff;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.5);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: .2s all linear;
+  -webkit-transition: .2s all linear;
+  -moz-transition: .2s all linear;
+  -ms-transition: .2s all linear;
+  -o-transition: .2s all linear;
+}
+
+#main-button ~ .telegram-color {
+  background: linear-gradient(0deg, #017AB1, #01ABE6);
+}
+
+#main-button ~ .whatsapp-color {
+  background: linear-gradient(0deg, #00B100, #09db09);
+}
+
+#main-button ~ .messenger-color {
+  background: linear-gradient(0deg, #0078FF, #00C6FF);
+}
+
+
+#main-button ~ .instagram-color {
+background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+}
+
+#main-button.open ~ a {
+  opacity: 1;
+  transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -webkit-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -moz-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -ms-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+  -o-transition: .4s all cubic-bezier(0, 0.01, 0, 1.27);
+}
+#main-button.open ~ a:nth-of-type(1) {
+  bottom: 60px;
+}
+#main-button.open ~ a:nth-of-type(2) {
+  bottom: 120px;
+}
+#main-button.open ~ a:nth-of-type(3) {
+  bottom: 180px;
+}
+
+.wave {
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes wave {
+  0% {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+  100% {box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0);}
+}
+
+.open {
+  animation-iteration-count: 1;
+}
 
 
 /*** 
@@ -365,15 +470,6 @@ figure{
   margin: 0px;
 }
 
-img {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  transition-delay: .1s;
-  transition-timing-function: ease-in-out;
-  transition-duration: .7s;
-  transition-property: all;
-}
 
 .row{
   --bs-gutter-x: 30px;
@@ -399,7 +495,7 @@ html.lenis {
   line-height: 30px;
   font-weight: 500;
   font-family: var(--title-font);
-  color: var(--title-color) !important;
+  color: var(--title-color);
   text-align: center;
   border-radius: 50px;
   padding: 15px 40px;
@@ -535,7 +631,7 @@ html.lenis {
 
 .scroll-to-top {
   position: fixed;
-  right: 30px;
+  left: 30px;
   bottom: 30px;
   height: 50px;
   width: 50px;
@@ -1332,7 +1428,8 @@ button.ltr {
 }
 
 .banner-btn{
-  background: #fff;
+  background: var(--secondary-color);
+  color: #fff;
 }
 
 .banner-btn:hover,
