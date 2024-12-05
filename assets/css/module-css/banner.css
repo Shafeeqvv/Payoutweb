@@ -24,16 +24,24 @@
 .banner-section .content-box h2{
   font-size: 80px;
   line-height: 79px;
-  color: #fff;
+  max-width: 930px;
+  margin: 0 auto;
+  margin-bottom: 24px;
+}
+.banner-section .content-box h3{
+  font-size: 30px;
+  line-height: 49px;
+  color: #000;
   max-width: 930px;
   margin: 0 auto;
   margin-bottom: 24px;
 }
 
 .banner-section .content-box p{
-  font-size: 20px;
+  font-size: 16px;
   line-height: 32px;
   color: #fff;
+  text-align:left;
   max-width: 720px;
   margin: 0 auto;
   margin-bottom: 40px;
@@ -64,12 +72,12 @@
 .banner-section .content-box .btn-box .theme-btn.btn-one:hover,
 .banner-section .content-box .btn-box .theme-btn.btn-one:before,
 .banner-section .content-box .btn-box .theme-btn.btn-one:after{
-  background: var(--secondary-color);
-  color: #fff;
+  background:#fff;
+  color: #000 !important  ;
 }
 
 .banner-section .content-box .btn-box .theme-btn.btn-one:hover{
-  color: #fff;
+  color: #000;
 }
 
 .banner-section .author-box{
@@ -821,7 +829,10 @@
     font-size: 40px;
     line-height: 50px;
   }
-
+  .banner-section .content-box h2{
+    font-size: 30px;
+    line-height: 40px;
+  }
   .banner-section{
     padding: 200px 0px;
   }
@@ -919,6 +930,10 @@
    .banner-section .content-box h2{
     font-size: 35px;
     line-height: 45px;
+  }
+   .banner-section .content-box h3{
+    font-size: 25px;
+    line-height: 35px;
   }
 }
 
